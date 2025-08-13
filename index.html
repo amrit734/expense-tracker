@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="content">    
+        <div class="title">
+            <h1>Expense Tracker</h1>
+            <h2>By Amrit Stephen Anand</h2>
+        </div>
+        <div class="current-balance">
+            <h1 id="h1-total-amount">$0.00</h1>
+        </div>
+        <form id = "form-input">
+            <input type="text" id="txt-name" placeholder="Enter transaction name" required>
+            <input type="text" id="txt-amount" placeholder="Enter transaction amount" required>
+            <select id="sel-category" required>
+                <option selected disabled>Choose Category</option>
+                <option value="cosmetics">Cosmetics</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="essentials">Essentials</option>
+                <option value="gift">Gift</option>
+                <option value="groceries">Groceries</option>
+                <option value="other">Other</option>
+            </select>
+            <select id="sel-type" required>
+                <option selected disabled>Choose Type</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <input type = "date" id = "dt-trans" required>
+            <input type="submit">
+            <input type="button" id="btn-clear" value="Clear">
+            <select id="sel-sort" required>
+                <option selected disabled>Sort By</option>
+                <option value="added">Added</option>
+                <option value="category">Category</option>
+                <option value="date">Date</option>
+            </select>
+        </form>
+        <div class = "date-filter">
+            <form id = "form-filter">
+                <label>Start Date </label><input type= "date" id = "date-start" required>
+                <label>End Date </label><input type = "date" id = "date-end" required>
+                <button id = "btn-filter">Filter By Date</button>
+            </form>
+        </div>
+        <div class="transaction-history">
+            <div class = "transaction">
+                <span>Transaction Name</span>
+                <span>Transaction Amount</span>
+                <span>Transaction Category</span>
+                <span>Transaction Type</span>
+                <span>Transaction Date</span>
+            </div>
+        </div>
+        <div class = "download-content">
+            <div class = "summary-content">
+                <button id="btn-summary">View Monthly Summary</button>
+                <button id="btn-create">Create Transaction File</button>
+            </div>
+            <a download="transations.csv" id = "btn-download"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

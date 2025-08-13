@@ -1,0 +1,100 @@
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.title {
+    background-color: white;
+    padding: 0 1rem 0 1rem;
+    border-radius: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+#form-filter {
+    margin-top: 0.3rem;
+}
+
+form input {
+    text-align: center;
+}
+
+.transaction-history {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 23rem;
+    min-width: 62rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding-bottom: 0.8rem;
+}
+
+.transaction{
+    display: grid;
+    grid-template-columns: 40% 20% 15% 10% 10% 5%;
+    text-align: center;
+    border-bottom: 0.1rem dashed;
+}
+
+.download-content {
+    display: flex;
+    background-color: rgb(35, 163, 163);
+    min-width: 55rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.summary-content {
+    display: flex;
+    flex-direction: row;
+    gap : 0.5rem;
+}
+
+.download-content button {
+    max-width : 15rem
+}
+
+span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width : 1000px) {
+    .transaction-history {
+        min-width: 20rem;
+        max-width: 55rem;
+    }
+
+    .download-content {
+        min-width: 20rem;
+        max-width: 55rem;
+    }
+}
