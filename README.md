@@ -4,7 +4,7 @@ By Amrit Stephen Anand
 About
 -------
 
-    The Expense Tracker App is a personal tracking tool that maintains records of the user's transactions. 
+The Expense Tracker App is a personal tracking tool that maintains records of the user's transactions. 
 The project uses Javascript for dynamic updates, DOM manipulation and data storage.
 
 Functionality
@@ -31,4 +31,5 @@ Instructions
 - Use the "Sort By" dropdown to sort as required
 - The filter form can be used to filter records by date if required
 - Click the "Clear" button to clear data.
+
 - Click the "View Monthly Summary" button to display income
