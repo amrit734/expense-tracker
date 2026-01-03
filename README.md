@@ -32,5 +32,6 @@ Instructions
 - The filter form can be used to filter records by date if required
 - Click the "Clear" button to clear data.
 - Click the "View Monthly Summary" button to display income
-- Click the "Create Transaction File" button to create a download link to produce a css file
+- Click the "Create Transaction File" button to create a download link to produce a CSV file
+
 
