@@ -18,7 +18,7 @@ Functionality
 - Sorting - Transaction records may be sorted based on various criteria
 - Filter By Date - Transaction records may be filtered by date
 - Category Selection - Categories may be assigned to transactions
-- Monthly Summary - Monthly summary of expenses can be displayed
+- Summary - Summary of expenses can be displayed
 - Export Data - Records may be downloaded in the form of a CSV file.
 
 Instructions
@@ -31,7 +31,8 @@ Instructions
 - Use the "Sort By" dropdown to sort as required
 - The filter form can be used to filter records by date if required
 - Click the "Clear" button to clear data.
-- Click the "View Monthly Summary" button to display income
+- Click the "View Summary" button to display income
 - Click the "Create Transaction File" button to create a download link to produce a CSV file
+
 
 
