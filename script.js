@@ -59,7 +59,7 @@ const getContent = () => {
     }
 }
 
-//Function To Display Monthly Summary
+//Function To Display Summary
 const showSummary = () => {
     var jan = feb = mar = apr = may = jun = jul = aug = sep = oct = nov = dec = 0;
     listTransactions.forEach((item) => {
@@ -407,4 +407,5 @@ if (localStorage.getItem("transactionData")) {
     listTransactions = data;
     updateTransactionList();
 }
+
 
