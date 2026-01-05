@@ -60,7 +60,7 @@ const getContent = () => {
 }
 
 //Function To Display Monthly Summary
-const monthlySummary = () => {
+const showSummary = () => {
     var jan = feb = mar = apr = may = jun = jul = aug = sep = oct = nov = dec = 0;
     listTransactions.forEach((item) => {
         switch (item.transactionDate.substring(3, 5)) {
@@ -141,7 +141,7 @@ const monthlySummary = () => {
         }       
     })
 
-    var summary = `MONTHLY SUMMARY
+    var summary = `SUMMARY
 ---------------------------
 January : ${jan}
 February : ${feb}
@@ -162,7 +162,7 @@ December : ${dec}
 //Selecting Summary Button And Adding Event Handling
 var btnSummary = document.querySelector("#btn-summary");
 btnSummary.addEventListener("click", () => {
-    monthlySummary();
+    showSummary();
 });
 
 //Function To Remove Transaction
@@ -407,3 +407,4 @@ if (localStorage.getItem("transactionData")) {
     listTransactions = data;
     updateTransactionList();
 }
+
