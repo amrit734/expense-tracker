@@ -398,7 +398,7 @@ btnCreateDownload.addEventListener("click", () => {
     var url = URL.createObjectURL(csv);
     btnDownload.href = url;
     btnDownload.textContent = "Download Transactions";
-    btnCreate.textContent = "Update Download File"
+    btnCreate.textContent = "Update Download File";
 })
 
 //Loading Stored Data
@@ -407,5 +407,6 @@ if (localStorage.getItem("transactionData")) {
     listTransactions = data;
     updateTransactionList();
 }
+
 
 
