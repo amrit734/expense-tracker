@@ -28,6 +28,11 @@ const getContent = () => {
             throw new Error("Invalid input");
         }
 
+        if (tAmount <= 0) {
+            alert("Amount must be greater than 0");
+            throw new Error("Invalid input");
+        }
+
         if ((tCategory == "Choose Category") != 0) {
             alert("Choose a valid category");
             throw new Error("Invalid input");
